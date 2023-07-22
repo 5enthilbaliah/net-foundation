@@ -1,0 +1,11 @@
+﻿services:
+  hello-amrita:
+    image: hello-world:latest
+    container_name: hello-amrita
+    networks:
+      - net-amrita
+
+networks:
+  net-amrita:
+    driver: bridge
+    name: net-amrita
